@@ -1,4 +1,4 @@
-# Arduino Guide
+# Python Guide
 
 This site is built with MkDocs and the MaterialX theme.
 
