@@ -1,0 +1,38 @@
+site_name: Python Guide
+
+nav:
+  - Welcome: index.md
+
+
+theme:
+  name: materialx
+  logo: assets/cyberclub.png
+  favicon: assets/cyberclub.png
+
+  features:
+    - content.code.copy
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+
+  font:
+    text: Inter
+    code: JetBrains Mono
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - admonition
