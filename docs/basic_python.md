@@ -16,6 +16,8 @@ The next basic function is the input function which is implemented by `input("te
 
 Try asking the user to Enter something by using `input("Enter Something")` and enter some characters and see what happens!
 
+> You put these functions arguments under paranthesis '()' 
+
 ## Arithmetic : 
 
 Python can perform arithmetic calculations with numbers (there are some nuances for calculations with texts as well, but this section focuses on the arithmetic with numbers).
@@ -75,4 +77,29 @@ Python has various data types:
     - `bool` Stands for Boolean Logic to represent logical values and it only has `True` or `False`. The binary equivalent is `0` for False and `1` for True.
 
 ### Type Conversions : 
+
+You can check the data type of a character using the `type` function. Try checking the types of:
+
+```
+5
+"Hello"
+4 + 7j
+False
+
+```
+
+A character can be converted into string by passing the `str()` function. This converts any character (integer, float, bool or complex to a string). Now try using the string function on `6 + 2j` and `True`.
+
+A character can be converted into integer using the `int()` function and can be converted into a float using the `float()` function. See what happens when you do `float("45.45")` or `int("12")`. But notice what happens when you try doing `int("45.45")`. It throws an error. But what happens when you forcefully convert a float to an integer? It will be truncated and only show the integer value. Try `int(45.45)`. 
+
+But converting non number, text strings like `"Hello"` or `"World"` to either float or integer will show an error.
+Try applying the int and float functions on these strings and see the error that you get.
+
+Boolean type conversion is pretty easy. If you have an integer or a float, and if you apply the `bool()` function to convert it, your result will either be True or False. If your number is zero it will return False, if your number is any other number other than 0, it will return True.
+
+Similarly for strings, `bool("")` (Boolean type function for an empty string) will give you False, while any other string will give you True. 
+
+Applying `int`,`float` or `str` functions on Boolean values (True or False) are pretty straightforward. True gives 1 in integer and 1.0 in floating point values, whereas False gives 0 in integer and 0.0 in floating point values. Whereas using the `str()` function on Boolean just returns `"True"` or `"False"`.
+
+> Note that Boolean values in python have uppercase in the first letter and the rest are lowercase like True and False.
 

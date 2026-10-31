@@ -3,6 +3,8 @@ site_name: Python Guide
 nav:
   - Welcome: index.md
   - Basics : basic_python.md
+  - Variables : variables.md
+  - String formatting : string_formatting.md
 
 
 theme:
